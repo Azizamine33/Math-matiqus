@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mathématiques - Classe de 6ème</title>
+    <!-- Balise pour garder le site discret sur internet -->
+    <meta name="robots" content="noindex, nofollow">
+    
+    <!-- Importation de la police Gothique / Ancienne -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+
+    <style>
+        /* Configuration générale avec fond bleu-gris */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #4a6572; /* Couleur bleu-gris */
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;    
+            justify-content: center; 
+        }
+
+        /* En-tête avec logo et style ancien */
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Style du logo */
+        .logo-college {
+            max-width: 120px;  
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        /* Titre "Classe de 6ème" */
+        header h1 {
+            font-family: 'UnifrakturMaguntia', cursive, serif;
+            font-size: 4.5rem;
+            font-weight: normal;
+            margin: 0;
+            letter-spacing: 2px;
+            color: #ffffff;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+            line-height: 1.2;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-top: 10px;
+            font-family: Arial, sans-serif;
+            letter-spacing: 1px;
+        }
+
+        /* Grille pour les 4 boutons */
+        .grille-boutons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Style des boutons de la classe de 6ème */
+        .btn-categorie {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff;
+            color: #232f34;
+            font-size: 1.3rem;
+            font-weight: bold;
+            padding: 25px 15px;
+            border-radius: 12px;
+            text-decoration: none;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+            transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+            text-align: center;
+        }
+
+        .btn-categorie:hover {
+            transform: translateY(-4px);
+            background-color: #f0f4f8;
+            box-shadow: 0 12px 20px rgba(0,0,0,0.35);
+        }
+
+        /* Bouton Retour */
+        .btn-retour {
+            margin-top: 40px;
+            display: inline-block;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 10px 20px;
+            border-radius: 20px;
+            transition: background 0.2s;
+        }
+
+        .btn-retour:hover {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- En-tête -->
+    <header>
+        <img src="docs/caca.jpg" alt="Logo Mathématiques" class="logo-college">
+        <h1>Classe de 6<sup>ème</sup></h1>
+        <p>Espace de travail et de ressources</p>
+    </header>
+
+    <!-- Grille des 4 boutons -->
+    <div class="grille-boutons">
+        <a href="lecons_6eme.html" class="btn-categorie">📖 Leçons</a>
+        <a href="exercices_6eme.html" class="btn-categorie">✏️ Exercices</a>
+        <a href="automatismes_6eme.html" class="btn-categorie">⚡ Automatismes</a>
+        <a href="info_6eme.html" class="btn-categorie">💻 Informatique</a>
+    </div>
+
+    <!-- Lien pour revenir à la page d'accueil -->
+    <a href="index1.html" class="btn-retour">⬅ Retour à l'accueil</a>
+
+</body>
+</html>
