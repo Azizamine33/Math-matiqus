@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercices de 6ème - Mathématiques</title>
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Importation de la police Gothique / Ancienne -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e3c72;
+            color: white;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .retour-btn {
+            background-color: white;
+            color: #1e3c72;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            transition: background-color 0.2s, transform 0.1s;
+        }
+
+        .retour-btn:hover {
+            background-color: #f0f0f0;
+            transform: translateY(-2px);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Titre de la classe en style gothique */
+        header h1 {
+            font-family: 'UnifrakturMaguntia', cursive, serif;
+            font-size: 4rem;
+            margin: 0;
+            letter-spacing: 2px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+
+        /* Grille sur 2 colonnes pour les chapitres */
+        .grille-chapitres {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 15px;
+            width: 100%;
+            max-width: 1100px;
+            margin-bottom: 30px;
+        }
+
+        /* Carte de chaque chapitre */
+        .chapitre-card {
+            background-color: #ffffff;
+            color: #333;
+            padding: 18px 20px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .chapitre-titre {
+            font-weight: bold;
+            font-size: 1rem;
+            color: #1e3c72;
+            padding-right: 10px;
+        }
+
+        .btn-pdf {
+            background-color: #2a5298;
+            color: white;
+            padding: 8px 12px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            white-space: nowrap;
+            transition: background-color 0.2s, transform 0.1s;
+        }
+
+        .btn-pdf:hover {
+            background-color: #1e3c72;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="retour-btn">← Retour au menu principal</a>
+
+    <header>
+        <h1>Classe de 6<sup>ème</sup></h1>
+        <p>Espace des Exercices de Mathématiques (17 Chapitres)</p>
+    </header>
+
+    <!-- Conteneur des 2 colonnes -->
+    <div class="grille-chapitres">
+
+        <!-- Chapitre 1 -->
+        <div class="chapitre-card">
+            <span class="chapitre-titre">Chapitre 1 : Nombres décimaux</span>
+            <a href="#" class="btn-pdf" onclick="verifierCode('docs/ch1_ex.pdf')">✏️ Exercices</a>
+        </div>
+
+        <!-- Chapitre 2 -->
+        <div class="chapitre-card">
+            <span class="chapitre-titre">Chapitre 2 : Additions et Soustractions</span>
+            <a href="#" class="btn-pdf" onclick="verifierCode('docs/ch2_ex.pdf')">✏️ Exercices</a>
+        </div>
+
+        <!-- Chapitre 3 -->
+        <div class="chapitre-card">
+            <span class="chapitre-titre">Chapitre 3 : Éléments de géométrie</span>
+            <a href="#" class="btn-pdf" onclick="verifierCode('docs/ch3_ex.pdf')">✏️ Exercices</a>
+        </div>
+
+        <!-- Chapitre 4 -->
+        <div class="chapitre-card">
+            <span class="chapitre-titre">Chapitre 4 : Multiplication et Division</span>
+            <a href="#" class="btn-pdf" onclick="verifierCode('docs/ch4_ex.pdf')">✏️ Exercices</a>
+        </div>
+
+        <!-- Chapitre 5 -->
+        <div class="chapitre-card">
+            <span class="chapitre-titre">Chapitre 5 : Angles</span>
+            <a href="#" class="btn-pdf" onclick="verifierCode('docs/ch5_ex.pdf')">✏️ Exercices</a>
+        </div>
+
+        <!-- Chapitre 6 -->
+        <div class="chapitre-card">
+            <span class="chapitre-titre">Chapitre 6 : Fractions (introduction)</span>
+            <a href="#" class="btn-pdf" onclick="verifierCode('docs/ch6_ex.pdf')">✏️ Exercices</a>
+        </div>
+
+        <!-- Chapitre 7 -->
+        <div class="chapitre-card">
+            <span class="chapitre-titre">Chapitre 7 : Symétrie axiale</span>
+            <a href="#" class="btn-pdf" onclick="verifierCode('docs/ch7_ex.pdf')">✏️ Exercices</a>
+        </div>
+
+        <!-- Chapitre 8 -->
+        <div class="chapitre-card">
+            <span class="chapitre-titre">Chapitre 8 : Périmètres et Aires</span>
+            <a href="#" class="btn-pdf" onclick="verifierCode('docs/ch8_ex.pdf')">✏️ Exercices</a>
+        </div>
+
+        <!-- Chapitre 9 -->
+        <div class="chapitre-card">
+            <span class="chapitre-titre">Chapitre 9 : Proportionnalité</span>
+            <a href="#" class="btn-pdf" onclick="verifierCode('docs/ch9_ex.pdf')">✏️ Exercices</a>
+        </div>
+
+        <!-- Chapitre 10 -->
+        <div class="chapitre-card">
+            <span class="chapitre-titre">Chapitre 10 : Nombres relatifs</span>
+            <a href="#" class="btn-pdf" onclick="verifierCode('docs/ch10_ex.pdf')">✏️ Exercices</a>
+        </div>
+
+        <!-- Chapitre 11 -->
+        <div class="chapitre-card">
+            <span class="chapitre-titre">Chapitre 11 : Espace (volumes)</span>
+            <a href="#" class="btn-pdf" onclick="verifierCode('docs/ch11_ex.pdf')">✏️ Exercices</a>
+        </div>
+
+        <!-- Chapitre 12 -->
+        <div class="chapitre-card">
+            <span class="chapitre-titre">Chapitre 12 : Gestion de données</span>
+            <a href="#" class="btn-pdf" onclick="verifierCode('docs/ch12_ex.pdf')">✏️ Exercices</a>
+        </div>
+
+        <!-- Chapitre 13 -->
+        <div class="chapitre-card">
+            <span class="chapitre-titre">Chapitre 13 : Divisibilité</span>
+            <a href="#" class="btn-pdf" onclick="verifierCode('docs/ch13_ex.pdf')">✏️ Exercices</a>
+        </div>
+
+        <!-- Chapitre 14 -->
+        <div class="chapitre-card">
+            <span class="chapitre-titre">Chapitre 14 : Cercles et disques</span>
+            <a href="#" class="btn-pdf" onclick="verifierCode('docs/ch14_ex.pdf')">✏️ Exercices</a>
+        </div>
+
+        <!-- Chapitre 15 -->
+        <div class="chapitre-card">
+            <span class="chapitre-titre">Chapitre 15 : Durées et conversions</span>
+            <a href="#" class="btn-pdf" onclick="verifierCode('docs/ch15_ex.pdf')">✏️ Exercices</a>
+        </div>
+
+        <!-- Chapitre 16 -->
+        <div class="chapitre-card">
+            <span class="chapitre-titre">Chapitre 16 : Ensembles et notations</span>
+            <a href="#" class="btn-pdf" onclick="verifierCode('docs/ch16_ex.pdf')">✏️ Exercices</a>
+        </div>
+
+        <!-- Chapitre 17 -->
+        <div class="chapitre-card">
+            <span class="chapitre-titre">Chapitre 17 : Bilan et révisions</span>
+            <a href="#" class="btn-pdf" onclick="verifierCode('docs/ch17_ex.pdf')">✏️ Exercices</a>
+        </div>
+
+    </div>
+
+</body>
+<script>
+    function verifierCode(urlPdf) {
+        var motDePasseSecret = "college2026"; 
+        var saisie = prompt("Veuillez entrer le code d'accès fourni par votre professeur :");
+
+        if (saisie === motDePasseSecret) {
+            window.open(urlPdf, '_blank');
+        } else if (saisie === null) {
+            return;
+        } else {
+            alert("Code incorrect. Demandez le code à votre professeur.");
+        }
+    }
+</script>
+</html>

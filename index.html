@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mathématiques - Espace Pédagogique</title>
+    <!-- Balise pour garder le site discret sur internet -->
+    <meta name="robots" content="noindex, nofollow">
+    
+    <!-- Importation de la police Gothique / Ancienne -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+
+    <style>
+        /* Configuration générale */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e3c72; /* Fond bleu */
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;    
+            justify-content: center; 
+        }
+
+        /* En-tête avec logo et style ancien XXL */
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Style du logo */
+        .logo-college {
+            max-width: 120px;  
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        /* Style très grand et ancien pour le titre "Mathématiques" */
+        header h1 {
+            font-family: 'UnifrakturMaguntia', cursive, serif; /* Police gothique médiévale */
+            font-size: 5rem; /* Grands caractères gothiques */
+            font-weight: normal;
+            margin: 0;
+            letter-spacing: 2px;
+            color: #ffffff;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+            padding-bottom: 5px;
+            line-height: 1.2;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-top: 10px;
+            font-family: Arial, sans-serif;
+            letter-spacing: 1px;
+        }
+
+        /* Grille élargie pour contenir les 5 colonnes */
+        .grille-classes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* S'adapte pour 5 colonnes */
+            gap: 15px;
+            width: 100%;
+            max-width: 1250px; /* Élargi pour les 5 colonnes */
+            margin: 0 auto;
+        }
+
+        /* Style de chaque case de classe */
+        .carte-classe {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 15px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .carte-classe h2 {
+            color: #1e3c72;
+            font-size: 1.2rem;
+            margin-top: 0;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 8px;
+        }
+
+        /* Conteneur des boutons */
+        .boutons {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        /* Style des liens / boutons */
+        .btn {
+            display: block;
+            padding: 8px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: background 0.2s, transform 0.1s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .btn-lecon {
+            background-color: #2a5298;
+            color: white;
+        }
+
+        .btn-lecon:hover {
+            background-color: #1e3c72;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- En-tête avec le logo, le titre et la musique -->
+    <header>
+        <img src="docs/caca.jpg" alt="Logo Mathématiques" class="logo-college">
+        <h1>Mathématiques</h1>
+        <p>Espace de travail et de révision</p>
+        
+        <div style="margin-top: 15px; text-align: center; color: white;">
+            <p style="font-size: 0.85rem; margin-bottom: 3px; opacity: 0.8;">🎶 Ambiance musicale</p>
+            <audio controls loop style="height: 30px; border-radius: 20px;">
+                <source src="docs/musique.mp3" type="audio/mpeg">
+                Votre navigateur ne supporte pas l'élément audio.
+            </audio>
+        </div>
+    </header>
+
+    <!-- Bandeau "En construction" -->
+    <div style="background-color: #ffeaa7; color: #2d3436; padding: 8px 15px; border-radius: 8px; font-weight: bold; margin-bottom: 20px; text-align: center; font-size: 0.95rem;">
+        🚧 Espace en cours de mise à jour par votre professeur 🚧
+    </div>
+
+    <!-- Les 5 cases pour les niveaux et automatismes -->
+    <div class="grille-classes">
+
+        <!-- Case 6ème -->
+        <div class="carte-classe">
+            <h2>Classe de 6<sup>ème</sup></h2>
+            <div class="boutons">
+                <a href="lecons_6eme.html" class="btn btn-lecon">📖 Leçons</a>
+                <a href="exercices_6eme.html" class="btn btn-lecon" target="_blank">✏️ Exercices</a>
+                <a href="info_6eme.html" class="btn btn-lecon" target="_blank">💻 Informatique</a>
+                <a href="devoirs_6eme.html" class="btn btn-lecon" target="_blank">✏️ Devoirs maison</a>
+                <a href="controle_6eme.html" class="btn btn-lecon" target="_blank">✏️ Contrôles</a>
+            </div>
+        </div>
+
+        <!-- Case 5ème -->
+        <div class="carte-classe">
+            <h2>Classe de 5<sup>ème</sup></h2>
+            <div class="boutons">
+                <a href="lecons_6eme.html" class="btn btn-lecon">📖 Leçons</a>
+                <a href="exercices_6eme.html" class="btn btn-lecon" target="_blank">✏️ Exercices</a>
+                <a href="info_6eme.html" class="btn btn-lecon" target="_blank">💻 Informatique</a>
+                <a href="devoirmaison_5eme.html" class="btn btn-lecon" target="_blank">✏️ Devoirs maison</a>
+                <a href="controle_5eme.html" class="btn btn-lecon" target="_blank">✏️ Contrôles</a>
+            </div>
+        </div>
+
+        <!-- Case 4ème -->
+        <div class="carte-classe">
+            <h2>Classe de 4<sup>ème</sup></h2>
+            <div class="boutons">
+                <a href="lecons_6eme.html" class="btn btn-lecon">📖 Leçons</a>
+                <a href="exercices_6eme.html" class="btn btn-lecon" target="_blank">✏️ Exercices</a>
+                <a href="info_6eme.html" class="btn btn-lecon" target="_blank">💻 Informatique</a>
+                <a href="devoirmaison_4.html" class="btn btn-lecon" target="_blank">✏️ Devoirs maison</a>
+                <a href="controle_4eme.html" class="btn btn-lecon" target="_blank">✏️ Contrôles</a>
+            </div>
+        </div>
+
+        <!-- Case 3ème -->
+        <div class="carte-classe">
+            <h2>Classe de 3<sup>ème</sup></h2>
+            <div class="boutons">
+                <a href="lecons_3eme.html" class="btn btn-lecon">📖 Leçons</a>
+                <a href="exercices_6eme.html" class="btn btn-lecon" target="_blank">✏️ Exercices</a>
+                <a href="info_6eme.html" class="btn btn-lecon" target="_blank">💻 Informatique</a>
+                <a href="devoirmaison_3eme.html" class="btn btn-lecon" target="_blank">✏️ Devoirs maison</a>
+                <a href="controle_3eme.html" class="btn btn-lecon" target="_blank">✏️ Contrôles</a>
+            </div>
+        </div>
+
+        <!-- Case Automatismes -->
+        <div class="carte-classe">
+            <h2>Automatismes</h2>
+            <div class="boutons">
+                <a href="auto_3eme.html" class="btn btn-lecon">⚡ 3<sup>ème</sup></a>
+                <a href="automatismes_4eme.html" class="btn btn-lecon">⚡ 4<sup>ème</sup></a>
+                <a href="automatismes_5eme.html" class="btn btn-lecon">⚡ 5<sup>ème</sup></a>
+                <a href="automatismes_6eme.html" class="btn btn-lecon">⚡ 6<sup>ème</sup></a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

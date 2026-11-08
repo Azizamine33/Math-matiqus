@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrôles de 3ème - Mathématiques</title>
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Importation de la police Gothique / Ancienne -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e3c72;
+            color: white;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .retour-btn {
+            background-color: white;
+            color: #1e3c72;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            transition: background-color 0.2s, transform 0.1s;
+        }
+
+        .retour-btn:hover {
+            background-color: #f0f0f0;
+            transform: translateY(-2px);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Titre de la classe en style gothique */
+        header h1 {
+            font-family: 'UnifrakturMaguntia', cursive, serif;
+            font-size: 4rem;
+            margin: 0;
+            letter-spacing: 2px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+
+        /* Grille sur 2 colonnes pour les contrôles */
+        .grille-chapitres {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+            gap: 15px;
+            width: 100%;
+            max-width: 1200px;
+            margin-bottom: 30px;
+        }
+
+        /* Carte de chaque contrôle */
+        .chapitre-card {
+            background-color: #ffffff;
+            color: #333;
+            padding: 15px 20px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .chapitre-titre {
+            font-weight: bold;
+            font-size: 1rem;
+            color: #1e3c72;
+            padding-right: 10px;
+        }
+
+        /* Conteneur des deux boutons (Énoncé + Corrigé) */
+        .boutons-groupe {
+            display: flex;
+            gap: 8px;
+        }
+
+        .btn-pdf {
+            background-color: #2a5298;
+            color: white;
+            padding: 8px 10px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 0.85rem;
+            white-space: nowrap;
+            transition: background-color 0.2s, transform 0.1s;
+        }
+
+        .btn-pdf:hover {
+            background-color: #1e3c72;
+            transform: translateY(-2px);
+        }
+
+        /* Style spécifique pour le bouton corrigé (couleur secondaire pour bien différencier) */
+        .btn-corrige {
+            background-color: #4a6fa5;
+        }
+        
+        .btn-corrige:hover {
+            background-color: #385680;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="retour-btn">← Retour au menu principal</a>
+
+    <header>
+        <h1>Classe de 3<sup>ème</sup></h1>
+        <p>Espace des Contrôles et Corrigés de Mathématiques</p>
+    </header>
+
+    <!-- Conteneur des 2 colonnes -->
+    <div class="grille-chapitres">
+
+        <!-- Contrôle 1 -->
+        <div class="chapitre-card">
+            <span class="chapitre-titre">Contrôle 1</span>
+            <div class="boutons-groupe">
+                <a href="#" class="btn-pdf" onclick="verifierCode('docs/controle1_enonce.pdf')">📝 Énoncé</a>
+                <a href="#" class="btn-pdf btn-corrige" onclick="verifierCode('docs/controle1_corrige.pdf')">✅ Corrigé</a>
+            </div>
+        </div>
+
+        <!-- Contrôle 2 -->
+        <div class="chapitre-card">
+            <span class="chapitre-titre">Contrôle 2</span>
+            <div class="boutons-groupe">
+                <a href="#" class="btn-pdf" onclick="verifierCode('docs/controle2_enonce.pdf')">📝 Énoncé</a>
+                <a href="#" class="btn-pdf btn-corrige" onclick="verifierCode('docs/controle2_corrige.pdf')">✅ Corrigé</a>
+            </div>
+        </div>
+
+        <!-- Contrôle 3 -->
+        <div class="chapitre-card">
+            <span class="chapitre-titre">Contrôle 3</span>
+            <div class="boutons-groupe">
+                <a href="#" class="btn-pdf" onclick="verifierCode('docs/controle3_enonce.pdf')">📝 Énoncé</a>
+                <a href="#" class="btn-pdf btn-corrige" onclick="verifierCode('docs/controle3_corrige.pdf')">✅ Corrigé</a>
+            </div>
+        </div>
+
+        <!-- Contrôle 4 -->
+        <div class="chapitre-card">
+            <span class="chapitre-titre">Contrôle 4</span>
+            <div class="boutons-groupe">
+                <a href="#" class="btn-pdf" onclick="verifierCode('docs/controle4_enonce.pdf')">📝 Énoncé</a>
+                <a href="#" class="btn-pdf btn-corrige" onclick="verifierCode('docs/controle4_corrige.pdf')">✅ Corrigé</a>
+            </div>
+        </div>
+
+        <!-- Contrôle 5 -->
+        <div class="chapitre-card">
+            <span class="chapitre-titre">Contrôle 5</span>
+            <div class="boutons-groupe">
+                <a href="#" class="btn-pdf" onclick="verifierCode('docs/controle5_enonce.pdf')">📝 Énoncé</a>
+                <a href="#" class="btn-pdf btn-corrige" onclick="verifierCode('docs/controle5_corrige.pdf')">✅ Corrigé</a>
+            </div>
+        </div>
+
+        <!-- Contrôle 6 -->
+        <div class="chapitre-card">
+            <span class="chapitre-titre">Contrôle 6</span>
+            <div class="boutons-groupe">
+                <a href="#" class="btn-pdf" onclick="verifierCode('docs/controle6_enonce.pdf')">📝 Énoncé</a>
+                <a href="#" class="btn-pdf btn-corrige" onclick="verifierCode('docs/controle6_corrige.pdf')">✅ Corrigé</a>
+            </div>
+        </div>
+
+        <!-- Contrôle 7 -->
+        <div class="chapitre-card">
+            <span class="chapitre-titre">Contrôle 7</span>
+            <div class="boutons-groupe">
+                <a href="#" class="btn-pdf" onclick="verifierCode('docs/controle7_enonce.pdf')">📝 Énoncé</a>
+                <a href="#" class="btn-pdf btn-corrige" onclick="verifierCode('docs/controle7_corrige.pdf')">✅ Corrigé</a>
+            </div>
+        </div>
+
+        <!-- Contrôle 8 -->
+        <div class="chapitre-card">
+            <span class="chapitre-titre">Contrôle 8</span>
+            <div class="boutons-groupe">
+                <a href="#" class="btn-pdf" onclick="verifierCode('docs/controle8_enonce.pdf')">📝 Énoncé</a>
+                <a href="#" class="btn-pdf btn-corrige" onclick="verifierCode('docs/controle8_corrige.pdf')">✅ Corrigé</a>
+            </div>
+        </div>
+
+        <!-- Contrôle 9 -->
+        <div class="chapitre-card">
+            <span class="chapitre-titre">Contrôle 9</span>
+            <div class="boutons-groupe">
+                <a href="#" class="btn-pdf" onclick="verifierCode('docs/controle9_enonce.pdf')">📝 Énoncé</a>
+                <a href="#" class="btn-pdf btn-corrige" onclick="verifierCode('docs/controle9_corrige.pdf')">✅ Corrigé</a>
+            </div>
+        </div>
+
+        <!-- Contrôle 10 -->
+        <div class="chapitre-card">
+            <span class="chapitre-titre">Contrôle 10</span>
+            <div class="boutons-groupe">
+                <a href="#" class="btn-pdf" onclick="verifierCode('docs/controle10_enonce.pdf')">📝 Énoncé</a>
+                <a href="#" class="btn-pdf btn-corrige" onclick="verifierCode('docs/controle10_corrige.pdf')">✅ Corrigé</a>
+            </div>
+        </div>
+
+        <!-- Contrôle 11 -->
+        <div class="chapitre-card">
+            <span class="chapitre-titre">Contrôle 11</span>
+            <div class="boutons-groupe">
+                <a href="#" class="btn-pdf" onclick="verifierCode('docs/controle11_enonce.pdf')">📝 Énoncé</a>
+                <a href="#" class="btn-pdf btn-corrige" onclick="verifierCode('docs/controle11_corrige.pdf')">✅ Corrigé</a>
+            </div>
+        </div>
+
+        <!-- Contrôle 12 -->
+        <div class="chapitre-card">
+            <span class="chapitre-titre">Contrôle 12</span>
+            <div class="boutons-groupe">
+                <a href="#" class="btn-pdf" onclick="verifierCode('docs/controle12_enonce.pdf')">📝 Énoncé</a>
+                <a href="#" class="btn-pdf btn-corrige" onclick="verifierCode('docs/controle12_corrige.pdf')">✅ Corrigé</a>
+            </div>
+        </div>
+
+        <!-- Contrôle 13 -->
+        <div class="chapitre-card">
+            <span class="chapitre-titre">Contrôle 13</span>
+            <div class="boutons-groupe">
+                <a href="#" class="btn-pdf" onclick="verifierCode('docs/controle13_enonce.pdf')">📝 Énoncé</a>
+                <a href="#" class="btn-pdf btn-corrige" onclick="verifierCode('docs/controle13_corrige.pdf')">✅ Corrigé</a>
+            </div>
+        </div>
+
+        <!-- Contrôle 14 -->
+        <div class="chapitre-card">
+            <span class="chapitre-titre">Contrôle 14</span>
+            <div class="boutons-groupe">
+                <a href="#" class="btn-pdf" onclick="verifierCode('docs/controle14_enonce.pdf')">📝 Énoncé</a>
+                <a href="#" class="btn-pdf btn-corrige" onclick="verifierCode('docs/controle14_corrige.pdf')">✅ Corrigé</a>
+            </div>
+        </div>
+
+        <!-- Contrôle 15 -->
+        <div class="chapitre-card">
+            <span class="chapitre-titre">Contrôle 15</span>
+            <div class="boutons-groupe">
+                <a href="#" class="btn-pdf" onclick="verifierCode('docs/controle15_enonce.pdf')">📝 Énoncé</a>
+                <a href="#" class="btn-pdf btn-corrige" onclick="verifierCode('docs/controle15_corrige.pdf')">✅ Corrigé</a>
+            </div>
+        </div>
+
+        <!-- Contrôle 16 -->
+        <div class="chapitre-card">
+            <span class="chapitre-titre">Contrôle 16</span>
+            <div class="boutons-groupe">
+                <a href="#" class="btn-pdf" onclick="verifierCode('docs/controle16_enonce.pdf')">📝 Énoncé</a>
+                <a href="#" class="btn-pdf btn-corrige" onclick="verifierCode('docs/controle16_corrige.pdf')">✅ Corrigé</a>
+            </div>
+        </div>
+
+        <!-- Contrôle 17 -->
+        <div class="chapitre-card">
+            <span class="chapitre-titre">Contrôle 17</span>
+            <div class="boutons-groupe">
+                <a href="#" class="btn-pdf" onclick="verifierCode('docs/controle17_enonce.pdf')">📝 Énoncé</a>
+                <a href="#" class="btn-pdf btn-corrige" onclick="verifierCode('docs/controle17_corrige.pdf')">✅ Corrigé</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script>
+    function verifierCode(urlPdf) {
+        var motDePasseSecret = "college2026"; 
+        var saisie = prompt("Veuillez entrer le code d'accès fourni par votre professeur :");
+
+        if (saisie === motDePasseSecret) {
+            window.open(urlPdf, '_blank');
+        } else if (saisie === null) {
+            return;
+        } else {
+            alert("Code incorrect. Demandez le code à votre professeur.");
+        }
+    }
+</script>
+</html>
