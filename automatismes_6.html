@@ -53,7 +53,8 @@
     function verifierCode(urlPdf) {
         var motDePasseSecret = "college2026"; 
         var saisie = prompt("Veuillez entrer le code d'accès fourni par votre professeur :");
-        if (saisie === motDePasseSecret) { window.open(urlPdf, '_blank'); }
+
+        if (saisie === motDePasseSecret) { window.open(urlPdf, '_self'); }
         else if (saisie !== null) { alert("Code incorrect."); }
     }
 </script>
