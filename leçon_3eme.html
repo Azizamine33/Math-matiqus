@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leçons de 3ème - Mathématiques</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #273746; color: white; margin: 0; padding: 20px; display: flex; flex-direction: column; align-items: center; min-height: 100vh; box-sizing: border-box; }
+        .retour-btn { background-color: white; color: #273746; padding: 10px 20px; text-decoration: none; font-weight: bold; border-radius: 5px; margin-bottom: 20px; transition: background-color 0.2s, transform 0.1s; }
+        .retour-btn:hover { background-color: #f0f0f0; transform: translateY(-2px); }
+        header { text-align: center; margin-bottom: 30px; }
+        header h1 { font-family: 'UnifrakturMaguntia', cursive, serif; font-size: 4rem; margin: 0; text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); }
+        header p { font-size: 1.2rem; opacity: 0.9; margin-top: 10px; }
+        .grille-chapitres { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 15px; width: 100%; max-width: 1200px; margin-bottom: 30px; }
+        .chapitre-card { background-color: #ffffff; color: #333; padding: 18px 20px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+        .chapitre-titre { font-weight: bold; font-size: 0.95rem; color: #273746; padding-right: 10px; flex: 1; }
+        .btn-pdf { background-color: #273746; color: white; padding: 8px 12px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 0.85rem; white-space: nowrap; transition: background-color 0.2s, transform 0.1s; }
+        .btn-pdf:hover { background-color: #1b2631; transform: translateY(-2px); }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="retour-btn">← Retour à l'accueil</a>
+    <header>
+        <h1>Classe de 3<sup>ème</sup></h1>
+        <p>Espace des Leçons de Mathématiques (Progression annuelle - 20 Séquences)</p>
+    </header>
+    <div class="grille-chapitres">
+        <div class="chapitre-card"><span class="chapitre-titre">Séquence 1 : Pourcentages</span><a href="#" class="btn-pdf" onclick="verifierCode('doclecon/3_ch1_lecon.pdf')">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Séquence 2 : Probabilités </span><a href="#" class="btn-pdf" onclick="verifierCode('doclecon/3_ch2_lecon.pdf')">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Séquence 3 : Triangles semblables</span><a href="#" class="btn-pdf" onclick="verifierCode('doclecon/3_ch3_lecon.pdf')">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Séquence 4 : Notions de fonctions</span><a href="#" class="btn-pdf" onclick="verifierCode('doclecon/3_ch4_lecon.pdf')">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Séquence 5 : Trigonométrie</span><a href="#" class="btn-pdf" onclick="verifierCode('doclecon/3_ch5_lecon.pdf')">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Séquence 6 : Statistiques</span><a href="#" class="btn-pdf" onclick="verifierCode('doclecon/3_ch6_lecon.pdf')">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Séquence 7 : Théorème de Thalès</span><a href="#" class="btn-pdf" onclick="verifierCode('doclecon/3_ch7_lecon.pdf')">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Séquence 8 : Calcul littéral partie1</span><a href="#" class="btn-pdf" onclick="verifierCode('doclecon/3_ch8_lecon.pdf')">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Séquence 9 : Réciproque de Thalès</span><a href="#" class="btn-pdf" onclick="verifierCode('doclecon/3_ch9_lecon.pdf')">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Séquence 10 : Fonctions affines </span><a href="#" class="btn-pdf" onclick="verifierCode('doclecon/3_ch10_lecon.pdf')">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Séquence 11 : Arithmétiques</span><a href="#" class="btn-pdf" onclick="verifierCode('doclecon/3_ch11_lecon.pdf')">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Séquence 12 : Transformation partie 1</span><a href="#" class="btn-pdf" onclick="verifierCode('doclecon/3_ch12_lecon.pdf')">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Séquence 13 : Calcul littéral 2</span><a href="#" class="btn-pdf" onclick="verifierCode('doclecon/3_ch13_lecon.pdf')">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Séquence 14 : Repérage dans l'espace</span><a href="#" class="btn-pdf" onclick="verifierCode('doclecon/3_ch14_lecon.pdf')">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Séquence 15 : Fonctions linéaires </span><a href="#" class="btn-pdf" onclick="verifierCode('doclecon/3_ch15_lecon.pdf')">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Séquence 16 : Transformation: Partie 2</span><a href="#" class="btn-pdf" onclick="verifierCode('doclecon/3_ch16_lecon.pdf')">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Séquence 17 : Ratio</span><a href="#" class="btn-pdf" onclick="verifierCode('doclecon/3_ch17_lecon.pdf')">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Séquence 18 : Equations</span><a href="#" class="btn-pdf" onclick="verifierCode('doclecon/3_ch18_lecon.pdf')">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Séquence 19 : Volumes </span><a href="#" class="btn-pdf" onclick="verifierCode('doclecon/3_ch19_lecon.pdf')">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Séquence 20 : Puissance </span><a href="#" class="btn-pdf" onclick="verifierCode('doclecon/3_ch20_lecon.pdf')">📄 Ouvrir</a></div>
+    </div>
+</body>
+<script>
+    function verifierCode(urlPdf) {
+        var motDePasseSecret = "college2026"; 
+        var saisie = prompt("Veuillez entrer le code d'accès fourni par votre professeur :");
+
+        if (saisie === motDePasseSecret) {
+            window.open(urlPdf, '_self');
+        } else if (saisie === null) {
+            return;
+        } else {
+            alert("Code incorrect. Demandez le code à votre professeur.");
+        }
+    }
+</script>
+</html>
