@@ -18,6 +18,10 @@
         .grille-chapitres { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 15px; width: 100%; max-width: 1200px; margin-bottom: 30px; }
         .chapitre-card { background-color: #ffffff; color: #333; padding: 18px 20px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
         .chapitre-titre { font-weight: bold; font-size: 0.95rem; color: #1e3c72; padding-right: 10px; flex: 1; }
+        
+        /* Conteneur pour aligner plusieurs boutons côte à côte */
+        .boutons-groupe { display: flex; gap: 8px; }
+        
         .btn-pdf { background-color: #2a5298; color: white; padding: 8px 12px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 0.85rem; white-space: nowrap; transition: background-color 0.2s, transform 0.1s; }
         .btn-pdf:hover { background-color: #1e3c72; transform: translateY(-2px); }
     </style>
@@ -26,34 +30,55 @@
     <a href="index.html" class="retour-btn">← Retour à l'accueil</a>
     <header>
         <h1>Classe de 6<sup>ème</sup></h1>
-        <p>Espace des Leçons de Mathématiques (17 Chapitres)</p>
+        <p>Espace des Leçons de Mathématiques (Progression annuelle - 25 Chapitres)</p>
     </header>
     <div class="grille-chapitres">
-        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 1 : Nombres entiers</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/nombres.pdf')">📄 Ouvrir</a></div>
-        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 2 : Solides</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/ch2.pdf')">📄 Ouvrir</a></div>
-        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 3 : Tableaux et diagrammes</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/ch3.pdf')">📄 Ouvrir</a></div>
-        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 4 : Éléments de géométrie</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/ch4.pdf')">📄 Ouvrir</a></div>
-        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 5 : Les nombres décimaux</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/ch5.pdf')">📄 Ouvrir</a></div>
-        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 6 : La règle et le compas</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/ch6.pdf')">📄 Ouvrir</a></div>
-        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 7 : Addition et Soustraction</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/ch7.pdf')">📄 Ouvrir</a></div>
-        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 8 : Multiplication</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/ch8.pdf')">📄 Ouvrir</a></div>
-        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 9 : Les Angles & Bissectrice</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/ch9.pdf')">📄 Ouvrir</a></div>
-        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 10 : Division & Durées</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/ch10.pdf')">📄 Ouvrir</a></div>
-        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 11 : Symétrie Axiale</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/ch11.pdf')">📄 Ouvrir</a></div>
-        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 12 : Proportionnalité</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/ch12.pdf')">📄 Ouvrir</a></div>
-        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 13 : Périmètre et Aires</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/ch13.pdf')">📄 Ouvrir</a></div>
-        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 14 : Probabilités</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/ch14.pdf')">📄 Ouvrir</a></div>
-        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 15 : Durées et conversions</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/ch15.pdf')">📄 Ouvrir</a></div>
-        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 16 : Algèbre</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/ch16.pdf')">📄 Ouvrir</a></div>
-        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 17 : Pensée informatique</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/ch17.pdf')">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 1 : Nombres entiers</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/6eme_ch1_lecon.pdf'); return false;">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 2 : Solides</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/6eme_ch2_lecon.pdf'); return false;">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 3 : Tableaux et diagrammes</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/6eme_ch3_lecon.pdf'); return false;">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 4 : Éléments de géométrie</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/6eme_ch4_lecon.pdf'); return false;">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 5 : Calculs posés</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/6eme_ch5_lecon.pdf'); return false;">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 6 : Nombres décimaux</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/6eme_ch6_lecon.pdf'); return false;">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 7 : Cercle et médiatrice</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/6eme_ch7_lecon.pdf'); return false;">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 8 : Calculs posés</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/6eme_ch8_lecon.pdf'); return false;">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 9 : Droites</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/6eme_ch9_lecon.pdf'); return false;">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 10 : Durées</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/6eme_ch10_lecon.pdf'); return false;">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 11 : Priorités opératoires</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/6eme_ch11_lecon.pdf'); return false;">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 12 : Arithmétique</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/6eme_ch12_lecon.pdf'); return false;">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 13 : Périmètres et aires</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/6eme_ch13_lecon.pdf'); return false;">📄 Ouvrir</a></div>
+        
+        <!-- Chapitre 14 avec deux boutons -->
+        <div class="chapitre-card">
+            <span class="chapitre-titre">Chapitre 14 : Angles 1 & 2</span>
+            <div class="boutons-groupe">
+                <a href="#" class="btn-pdf" onclick="verifierCode('docs/6eme_ch14_1_lecon.pdf'); return false;">📄 Ouvrir 1</a>
+                <a href="#" class="btn-pdf" onclick="verifierCode('docs/6eme_ch14_2_lecon.pdf'); return false;">📄 Ouvrir 2</a>
+            </div>
+        </div>
+
+        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 15 : Fractions (1)</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/6eme_ch15_lecon.pdf'); return false;">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 16 : Triangles et quadrilatères</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/6eme_ch16_lecon.pdf'); return false;">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 17 : Initiation à l'informatique</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/6eme_ch17_lecon.pdf'); return false;">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 18 : Fractions (2)</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/6eme_ch18_lecon.pdf'); return false;">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 19 : Symétrie axiale</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/6eme_ch19_lecon.pdf'); return false;">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 20 : Proportionnalité</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/6eme_ch20_lecon.pdf'); return false;">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 21 : Pourcentages</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/6eme_ch21_lecon.pdf'); return false;">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 22 : Probabilités</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/6eme_ch22_lecon.pdf'); return false;">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 23 : Cubes et volume</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/6eme_ch23_lecon.pdf'); return false;">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 24 : Volumes</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/6eme_ch24_lecon.pdf'); return false;">📄 Ouvrir</a></div>
+        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 25 : Algèbre</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/6eme_ch25_lecon.pdf'); return false;">📄 Ouvrir</a></div>
     </div>
+
+    <script>
+        function verifierCode(urlPdf) {
+            var motDePasseSecret = "college2026"; 
+            var saisie = prompt("Veuillez entrer le code d'accès fourni par votre professeur :");
+            if (saisie === motDePasseSecret) { 
+                window.open(urlPdf, '_blank'); 
+            } else if (saisie !== null) { 
+                alert("Code incorrect."); 
+            }
+        }
+    </script>
 </body>
-<script>
-    function verifierCode(urlPdf) {
-        var motDePasseSecret = "college2026"; 
-        var saisie = prompt("Veuillez entrer le code d'accès fourni par votre professeur :");
-        if (saisie === motDePasseSecret) { window.open(urlPdf, '_blank'); }
-        else if (saisie !== null) { alert("Code incorrect."); }
-    }
-</script>
 </html>
