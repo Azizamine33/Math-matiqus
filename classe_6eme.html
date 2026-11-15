@@ -2,94 +2,39 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leçons de 6ème - Mathématiques</title>
+    <title>Mathématiques - Classe de 6ème</title>
     <meta name="robots" content="noindex, nofollow">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
     <style>
-        body { font-family: Arial, sans-serif; background-color: #1e3c72; color: white; margin: 0; padding: 20px; display: flex; flex-direction: column; align-items: center; min-height: 100vh; box-sizing: border-box; }
-        .retour-btn { background-color: white; color: #1e3c72; padding: 10px 20px; text-decoration: none; font-weight: bold; border-radius: 5px; margin-bottom: 20px; transition: background-color 0.2s, transform 0.1s; }
-        .retour-btn:hover { background-color: #f0f0f0; transform: translateY(-2px); }
-        header { text-align: center; margin-bottom: 30px; }
-        header h1 { font-family: 'UnifrakturMaguntia', cursive, serif; font-size: 4rem; margin: 0; text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); }
-        header p { font-size: 1.2rem; opacity: 0.9; margin-top: 10px; }
-        .grille-chapitres { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 15px; width: 100%; max-width: 1200px; margin-bottom: 30px; }
-        .chapitre-card { background-color: #ffffff; color: #333; padding: 18px 20px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
-        .chapitre-titre { font-weight: bold; font-size: 0.95rem; color: #1e3c72; padding-right: 10px; flex: 1; }
-        
-        /* Conteneur pour aligner plusieurs boutons côte à côte */
-        .boutons-groupe { display: flex; gap: 8px; }
-        
-        .btn-pdf { background-color: #2a5298; color: white; padding: 8px 12px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 0.85rem; white-space: nowrap; transition: background-color 0.2s, transform 0.1s; }
-        .btn-pdf:hover { background-color: #1e3c72; transform: translateY(-2px); }
+        body { font-family: Arial, sans-serif; background-color: #2c3e50; color: #333; margin: 0; padding: 20px; min-height: 100vh; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+        header { text-align: center; color: white; margin-bottom: 30px; display: flex; flex-direction: column; align-items: center; }
+        .logo-college { max-width: 120px; height: auto; margin-bottom: 10px; border-radius: 10px; }
+        header h1 { font-family: 'UnifrakturMaguntia', cursive, serif; font-size: 4.5rem; font-weight: normal; margin: 0; letter-spacing: 2px; color: #ffffff; text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4); line-height: 1.2; }
+        header p { font-size: 1.1rem; opacity: 0.9; margin-top: 10px; font-family: Arial, sans-serif; letter-spacing: 1px; }
+        .grille-boutons { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; width: 100%; max-width: 1000px; margin: 0 auto; }
+        @media (max-width: 768px) { .grille-boutons { grid-template-columns: repeat(2, 1fr); } }
+        .btn-categorie { display: flex; align-items: center; justify-content: center; background-color: #ffffff; color: #232f34; font-size: 1.15rem; font-weight: bold; padding: 20px 10px; border-radius: 12px; text-decoration: none; box-shadow: 0 8px 16px rgba(0,0,0,0.25); transition: background 0.2s, transform 0.2s, box-shadow 0.2s; text-align: center; }
+        .btn-categorie:hover { transform: translateY(-4px); background-color: #f0f4f8; box-shadow: 0 12px 20px rgba(0,0,0,0.35); }
+        .btn-retour { margin-top: 30px; display: inline-block; color: #ffffff; text-decoration: none; font-weight: bold; font-size: 1rem; background-color: rgba(0, 0, 0, 0.2); padding: 10px 20px; border-radius: 20px; transition: background 0.2s; }
+        .btn-retour:hover { background-color: rgba(0, 0, 0, 0.4); }
     </style>
 </head>
 <body>
-    <a href="index.html" class="retour-btn">← Retour à l'accueil</a>
     <header>
+        <img src="caca.jpg" alt="Logo Mathématiques" class="logo-college">
         <h1>Classe de 6<sup>ème</sup></h1>
-        <p>Espace des Leçons de Mathématiques (Progression annuelle - 25 Chapitres)</p>
+        <p>Espace de travail et de ressources</p>
     </header>
-    <div class="grille-chapitres">
-        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 1 : Nombres entiers</span><a href="#" class="btn-pdf" onclick="verifierCode('doclecon/6eme_ch1_lecon.pdf'); return false;">📄 Ouvrir</a></div>
-        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 2 : Solides</span><a href="#" class="btn-pdf" onclick="verifierCode('doclecon//6eme_ch2_lecon.pdf'); return false;">📄 Ouvrir</a></div>
-        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 3 : Tableaux et diagrammes</span><a href="#" class="btn-pdf" onclick="verifierCode('doclecon//6eme_ch3_lecon.pdf'); return false;">📄 Ouvrir</a></div>
-        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 4 : Éléments de géométrie</span><a href="#" class="btn-pdf" onclick="verifierCode('doclecon//6eme_ch4_lecon.pdf'); return false;">📄 Ouvrir</a></div>
-        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 5 : Nombres décimaux</span><a href="#" class="btn-pdf" onclick="verifierCode('doclecon//6eme_ch5_lecon.pdf'); return false;">📄 Ouvrir</a></div>
-        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 6 : Cercle et médiatrice</span><a href="#" class="btn-pdf" onclick="verifierCode('doclecon//6eme_ch6_lecon.pdf'); return false;">📄 Ouvrir</a></div>
-        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 7 : Calculs posés</span><a href="#" class="btn-pdf" onclick="verifierCode('docs/6eme_ch8_lecon.pdf'); return false;">📄 Ouvrir</a></div>
-        <!-- Chapitre 14 avec deux boutons -->
-        <div class="chapitre-card">
-            <span class="chapitre-titre">Chapitre 8 : Droites 1 & 2</span>
-            <div class="boutons-groupe">
-                <a href="#" class="btn-pdf" onclick="verifierCode('doclecon//6eme_ch9_1_lecon.pdf'); return false;">📄 Ouvrir 1</a>
-                <a href="#" class="btn-pdf" onclick="verifierCode('doclecon//6eme_ch9_2_lecon.pdf'); return false;">📄 Ouvrir 2</a>
-            </div>
-        </div>
-        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 9 : Durées</span><a href="#" class="btn-pdf" onclick="verifierCode('doclecon//6eme_ch10_lecon.pdf'); return false;">📄 Ouvrir</a></div>
-        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 10 : Priorités opératoires</span><a href="#" class="btn-pdf" onclick="verifierCode('doclecon//6eme_ch11_lecon.pdf'); return false;">📄 Ouvrir</a></div>
-        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 11 : Arithmétique</span><a href="#" class="btn-pdf" onclick="verifierCode('doclecon//6eme_ch12_lecon.pdf'); return false;">📄 Ouvrir</a></div>
-        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 12 : Périmètres et aires</span><a href="#" class="btn-pdf" onclick="verifierCode('doclecon//6eme_ch13_lecon.pdf'); return false;">📄 Ouvrir</a></div>
-        
-        <!-- Chapitre 14 avec deux boutons -->
-        <div class="chapitre-card">
-            <span class="chapitre-titre">Chapitre 13 : Angles 1 & 2</span>
-            <div class="boutons-groupe">
-                <a href="#" class="btn-pdf" onclick="verifierCode('ddoclecon//6eme_ch14_1_lecon.pdf'); return false;">📄 Ouvrir 1</a>
-                <a href="#" class="btn-pdf" onclick="verifierCode('doclecon//6eme_ch14_2_lecon.pdf'); return false;">📄 Ouvrir 2</a>
-            </div>
-        </div>
-
-        <!-- Chapitre 14 avec deux boutons -->
-        <div class="chapitre-card">
-            <span class="chapitre-titre">Chapitre 14 : Fractions 1 & 2</span>
-            <div class="boutons-groupe">
-                <a href="#" class="btn-pdf" onclick="verifierCode('docs/6eme_ch15_1_lecon.pdf'); return false;">📄 Ouvrir 1</a>
-                <a href="#" class="btn-pdf" onclick="verifierCode('docs/6eme_ch15_2_lecon.pdf'); return false;">📄 Ouvrir 2</a>
-            </div>
-        </div>
-        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 15 : Triangles et quadrilatères</span><a href="#" class="btn-pdf" onclick="verifierCode('doclecon//6eme_ch16_lecon.pdf'); return false;">📄 Ouvrir</a></div>
-        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 16 : Initiation à l'informatique</span><a href="#" class="btn-pdf" onclick="verifierCode('doclecon//6eme_ch17_lecon.pdf'); return false;">📄 Ouvrir</a></div>
-        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 17 : Symétrie axiale</span><a href="#" class="btn-pdf" onclick="verifierCode('doclecon//6eme_ch19_lecon.pdf'); return false;">📄 Ouvrir</a></div>
-        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 18 : Proportionnalité</span><a href="#" class="btn-pdf" onclick="verifierCode('doclecon//6eme_ch20_lecon.pdf'); return false;">📄 Ouvrir</a></div>
-        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 19 : Pourcentages</span><a href="#" class="btn-pdf" onclick="verifierCode('doclecon//6eme_ch21_lecon.pdf'); return false;">📄 Ouvrir</a></div>
-        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 20 : Probabilités</span><a href="#" class="btn-pdf" onclick="verifierCode('doclecon//6eme_ch22_lecon.pdf'); return false;">📄 Ouvrir</a></div>
-        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 21 : Cubes et volume</span><a href="#" class="btn-pdf" onclick="verifierCode('doclecon//6eme_ch23_lecon.pdf'); return false;">📄 Ouvrir</a></div>
-        <div class="chapitre-card"><span class="chapitre-titre">Chapitre 22 : Algèbre</span><a href="#" class="btn-pdf" onclick="verifierCode('doclecon//6eme_ch25_lecon.pdf'); return false;">📄 Ouvrir</a></div>
+    <div class="grille-boutons">
+        <a href="leçon_4eme.html" class="btn-categorie">📖 Leçons</a>
+        <a href="exercices_4.html" class="btn-categorie">✏️ Exercices</a>
+        <a href="automatismes_4.html" class="btn-categorie">⚡ Automatismes</a>
+        <a href="info_3.html" class="btn-categorie">💻 Informatique</a>
+        <a href="devoirs_4.html" class="btn-categorie">📝 Devoirs maison</a>
+        <a href="controle_4eme.html" class="btn-categorie">📋 Contrôles</a>
     </div>
-
-    <script>
-        function verifierCode(urlPdf) {
-            var motDePasseSecret = "college2026"; 
-            var saisie = prompt("Veuillez entrer le code d'accès fourni par votre professeur :");
-            if (saisie === motDePasseSecret) { 
-                window.open(urlPdf, '_self'); 
-            } else if (saisie !== null) { 
-                alert("Code incorrect."); 
-            }
-        }
-    </script>
+    <a href="index.html" class="btn-retour">⬅ Retour à l'accueil</a>
 </body>
 </html>
